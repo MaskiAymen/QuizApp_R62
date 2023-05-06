@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+
+    android:orientation="vertical"
+    android:layout_margin="25dp">
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:text="map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:id="@+id/bMap"/>
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="305dp"
+        android:gravity="center"
+        android:src="@drawable/logo" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etLogin"
+        android:hint="MaiL"
+        android:drawableLeft="@drawable/baseline_mail_24"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etPassword"
+        android:hint="Password"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:inputType="textPassword"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="signin"
+
+        android:onClick="btnSigninPressed"
+
+        android:id="@+id/bLogin"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvRegister"
+        android:text="to register click here !"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:layout_marginTop="15dp"/>
+
+
+
+</LinearLayout>
